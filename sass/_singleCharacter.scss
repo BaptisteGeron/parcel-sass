@@ -1,0 +1,14 @@
+.singleContainer {
+background-color: aquamarine;
+max-width: 1400px;
+display: flex;
+flex-direction: column;
+
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50px;
+    border: 5px solid blue;
+}
+}
+
