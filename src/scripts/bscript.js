@@ -69,6 +69,10 @@ let editCharacters = async() => {
 }
 editCharacters()
 
+//display the Markdown editor
+
+
+
 //send edited character to api
 const saveCharacters = async () => {
     console.log("saving")
