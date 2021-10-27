@@ -78,13 +78,17 @@ const saveCharacters = async () => {
     characterToPut.description = document.querySelector('.inputLongDescription').value
     characterToPut.shortDescription = document.querySelector('.inputShortDescription').value
     console.log(characterToPut);
-
+    if ((characterToPut.image==null) || (characterToPut.image==undefined) || (characterToPut.name==null) || (characterToPut.name==undefined) || (characterToPut.description==null) || (characterToPut.description==undefined) || (characterToPut.shortDescription==null) || (characterToPut.shortDescription==undefined)){
+        alert("You have to fill all available fields, including adding a picture")
+    }
+    else {
     await fetch("https://character-database.becode.xyz/characters"+ prefixId,
     {
         method : submitMethod,
         body : JSON.stringify(characterToPut),
         headers: {"Content-type": "application/json; charset=UTF-8"}
     })
+    }
 }
 const submitButton = document.querySelector('#saveModifications');
 submitButton.addEventListener('click',saveCharacters);
