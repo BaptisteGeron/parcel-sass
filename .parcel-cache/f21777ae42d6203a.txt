@@ -1,4 +1,4 @@
-15906
+15910
 78C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\.package-lock.json132797564082178889 0
 94C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\string.prototype.trimend\.eslintrc132797560607050110 0
 100C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\string.prototype.trimstart\.eslintignore132797560593143168 0
@@ -19,7 +19,7 @@
 85C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\events\tests\listeners.js132797560728846816 0
 69C:\Users\Baptiste\Documents\becode\parcel-sass\src\scripts\bscript.js132797605574668139 0
 101C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\string\virtual\repeat.js132797561062026088 0
-59C:\Users\Baptiste\Documents\becode\parcel-sass\package.json132797916534142573 0
+59C:\Users\Baptiste\Documents\becode\parcel-sass\package.json132797931015297114 0
 70C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\randomfill132797560678715996 1
 93C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\entities\lib\encode-trie.d.ts.map132797560764145530 0
 84C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\abortcontroller-polyfill132797560741257722 1
@@ -29,7 +29,7 @@
 70C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\buffer-xor132797560689827564 1
 98C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\terser\node_modules\commander\index.js132797560602987415 0
 112C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\caniuse-lite\data\features\keyboardevent-location.js132797560958048710 0
-51C:\Users\Baptiste\Documents\becode\parcel-sass\dist132797924818358323 1
+51C:\Users\Baptiste\Documents\becode\parcel-sass\dist132797931025784315 1
 125C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\browserify-sign\node_modules\readable-stream\lib\internal\streams132797560780982909 1
 84C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\w3c-hr-time\package.json132797560650407503 0
 91C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\source-map\lib\binary-search.js132797560783464836 0
@@ -302,6 +302,7 @@
 88C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\to-fast-properties\readme.md132797560625459158 0
 79C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\get-port\index.d.ts132797560598612192 0
 81C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\mdn-data\api\index.js132797560600174776 0
+69C:\Users\Baptiste\Documents\becode\parcel-sass\dist\index.26dd983f.js132797931024813679 0
 90C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\highlight.js\styles\vs2015.css132797560874568641 0
 64C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\jake132797560794189119 1
 91C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\caniuse-lite\data\regions\LR.js132797560963205231 0
@@ -6280,7 +6281,6 @@
 81C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\lodash\_baseRepeat.js132797560876505633 0
 127C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\postcss-modules-local-by-default\node_modules\postcss\lib\result.js132797560827477405 0
 88C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\es-abstract\5\SecFromTime.js132797560991724947 0
-70C:\Users\Baptiste\Documents\becode\parcel-sass\dist\index.a6212980.css132797921027667486 0
 96C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\stable\number\constructor.js132797560895574547 0
 125C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\postcss-modules-local-by-default\node_modules\postcss\lib\rule.js132797560831540118 0
 102C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\stable\array-buffer\constructor.js132797560895418280 0
@@ -7335,6 +7335,7 @@
 87C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\es-abstract\2015\ToInt16.js132797561003341436 0
 87C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\node-addon-api\CHANGELOG.md132797560771510185 0
 118C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\jsdom\lib\jsdom\living\generated\ElementCreationOptions.js132797560878150141 0
+69C:\Users\Baptiste\Documents\becode\parcel-sass\dist\index.a08802fc.js132797931024813679 0
 96C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\es-abstract\2015\IsDataDescriptor.js132797560956329890 0
 79C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\escalade\index.d.ts132797560690067809 0
 92C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\es\regexp\constructor.js132797560894793243 0
@@ -9116,7 +9117,6 @@
 140C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\jsdom\lib\jsdom\living\constraint-validation\DefaultConstraintValidation-impl.js132797560821761864 0
 94C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\internals\enum-bug-keys.js132797560928970784 0
 77C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\json5\lib\util.js132797560737284884 0
-70C:\Users\Baptiste\Documents\becode\parcel-sass\dist\white.e03fe755.jpg132797921027597412 0
 74C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\bytes\index.js132797560608143905 0
 79C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\json5\dist\index.js132797560662439847 0
 83C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\es\parse-int.js132797561057348776 0
@@ -12648,6 +12648,7 @@
 90C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\stable\set-interval.js132797561064682466 0
 89C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\stable\set-timeout.js132797561065151231 0
 81C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\stable\string132797561082183351 1
+70C:\Users\Baptiste\Documents\becode\parcel-sass\dist\index.7778c26e.css132797931025023810 0
 81C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\stable\symbol132797561085621015 1
 86C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\stable\typed-array132797561088121157 1
 75C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\ajv\lib\data.js132797560828883739 0
@@ -13050,7 +13051,6 @@
 95C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\modules\es.string.search.js132797560960236331 0
 94C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\modules\es.string.small.js132797560960392573 0
 94C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\modules\es.string.split.js132797560960705101 0
-74C:\Users\Baptiste\Documents\becode\parcel-sass\dist\index.a6212980.css.map132797921029308595 0
 108C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\caniuse-lite\data\features\css-initial-letter.js132797560893074429 0
 89C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\internals\is-array.js132797561033099459 0
 100C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\modules\es.string.starts-with.js132797560960861368 0
@@ -13368,6 +13368,7 @@
 95C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\@parcel\watcher\src\watchman\IPC.hh132797560795581755 0
 88C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\typed-array132797561087808641 1
 80C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\url132797561074839301 1
+73C:\Users\Baptiste\Documents\becode\parcel-sass\dist\index.26dd983f.js.map132797931025494132 0
 85C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\weak-set132797561055004937 1
 83C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\acorn-walk\package.json132797560577829922 0
 99C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\weak-set\delete-all.js132797560913970132 0
@@ -13686,6 +13687,7 @@
 98C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\array\virtual\join.js132797561042348046 0
 98C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\array\virtual\keys.js132797561043754362 0
 107C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\array\virtual\last-index-of.js132797561044691927 0
+73C:\Users\Baptiste\Documents\becode\parcel-sass\dist\index.a08802fc.js.map132797931025464121 0
 97C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\array\virtual\map.js132797561047817063 0
 100C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\array\virtual\reduce.js132797561060619759 0
 101C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\core-js\features\array\virtual\reverse.js132797561063432398 0
@@ -15904,4 +15906,6 @@
 73C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\.bin\uuid.ps1132797561096913778 0
 74C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\.bin\which.cmd132797561096913778 0
 74C:\Users\Baptiste\Documents\becode\parcel-sass\node_modules\.bin\which.ps1132797561096913778 0
-62C:\Users\Baptiste\Documents\becode\parcel-sass\dist\index.html132797921027367262 0
+74C:\Users\Baptiste\Documents\becode\parcel-sass\dist\index.7778c26e.css.map132797931025744307 0
+62C:\Users\Baptiste\Documents\becode\parcel-sass\dist\index.html132797931024483451 0
+70C:\Users\Baptiste\Documents\becode\parcel-sass\dist\white.1a0acec4.jpg132797931024513474 0

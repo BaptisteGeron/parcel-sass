@@ -1,11 +1,15 @@
 {
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0",
+    "parcel": "^2.0.0"
+  },
   "name": "parcel-sass",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel src/index.html src/html/singleCharacter.html --public-url /",
+    "build": "parcel build src/index.html src/html/singleCharacter.html --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -16,9 +20,5 @@
   "bugs": {
     "url": "https://github.com/BaptisteGeron/parcel-sass/issues"
   },
-  "homepage": "https://github.com/BaptisteGeron/parcel-sass#readme",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0",
-    "parcel": "^2.0.0"
-  }
+  "homepage": "https://github.com/BaptisteGeron/parcel-sass#readme"
 }
