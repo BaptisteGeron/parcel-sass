@@ -26,7 +26,7 @@
 49D:\BeCode\parcel-sass\node_modules\once\README.md132797952579347607 0
 52D:\BeCode\parcel-sass\node_modules\caseless\index.js132797952585334638 0
 68D:\BeCode\parcel-sass\node_modules\core-js\features\reflect\index.js132797952661630946 0
-30D:\BeCode\parcel-sass\src\sass132797950500858961 1
+30D:\BeCode\parcel-sass\src\sass132798160299501262 1
 55D:\BeCode\parcel-sass\node_modules\lodash\fp\allPass.js132797952635491335 0
 57D:\BeCode\parcel-sass\node_modules\colord\plugins\lch.mjs132797952605286186 0
 53D:\BeCode\parcel-sass\node_modules\cssom\lib\parse.js132797952605530054 0
@@ -35,10 +35,14 @@
 70D:\BeCode\parcel-sass\node_modules\@nodelib\fs.stat\out\adapters\fs.js132797952586277863 0
 81D:\BeCode\parcel-sass\node_modules\cssstyle\lib\properties\webkitTextFillColor.js132797952620003684 0
 85D:\BeCode\parcel-sass\node_modules\postcss-selector-parser\dist\util\stripComments.js132797952614381450 0
+<<<<<<< HEAD
 32D:\BeCode\parcel-sass\.gitignore132798154290781747 0
+=======
+32D:\BeCode\parcel-sass\.gitignore132798160299471234 0
+>>>>>>> development
 55D:\BeCode\parcel-sass\node_modules\lodash\fp\forEach.js132797952644272906 0
 59D:\BeCode\parcel-sass\node_modules\json-source-map\index.js132797952584909313 0
-25D:\BeCode\parcel-sass\src132797950500858961 1
+25D:\BeCode\parcel-sass\src132798160299491275 1
 55D:\BeCode\parcel-sass\node_modules\loader-utils\LICENSE132797952576667407 0
 43D:\BeCode\parcel-sass\node_modules\asynckit132797952595371283 1
 58D:\BeCode\parcel-sass\node_modules\lodash\fp\conformsTo.js132797952639257304 0
@@ -50,7 +54,11 @@
 55D:\BeCode\parcel-sass\node_modules\optionator\README.md132797952580100096 0
 66D:\BeCode\parcel-sass\node_modules\caniuse-lite\data\regions\AX.js132797952615509312 0
 61D:\BeCode\parcel-sass\node_modules\v8-compile-cache\README.md132797952588585974 0
+<<<<<<< HEAD
 26D:\BeCode\parcel-sass\dist132798155245553887 1
+=======
+26D:\BeCode\parcel-sass\dist132798160454353083 1
+>>>>>>> development
 47D:\BeCode\parcel-sass\node_modules\bcrypt-pbkdf132797952588405925 1
 62D:\BeCode\parcel-sass\node_modules\lodash\fp\takeRightWhile.js132797952657697428 0
 57D:\BeCode\parcel-sass\node_modules\ajv\lib\refs\data.json132797952617233129 0
@@ -96,7 +104,11 @@
 54D:\BeCode\parcel-sass\node_modules\ws\lib\extension.js132797952591165843 0
 47D:\BeCode\parcel-sass\node_modules\uniq\uniq.js132797952588082037 0
 65D:\BeCode\parcel-sass\node_modules\object-inspect\readme.markdown132797952608930507 0
+<<<<<<< HEAD
 30D:\BeCode\parcel-sass\src\html132798153118238284 1
+=======
+30D:\BeCode\parcel-sass\src\html132798160299481222 1
+>>>>>>> development
 59D:\BeCode\parcel-sass\node_modules\@types\node\process.d.ts132797952616772096 0
 53D:\BeCode\parcel-sass\node_modules\nwsapi\src\modules132797952582677349 1
 70D:\BeCode\parcel-sass\node_modules\uri-js\dist\esnext\schemes\urn.d.ts132797952614459372 0
@@ -154,7 +166,7 @@
 55D:\BeCode\parcel-sass\node_modules\lodash\_baseHasIn.js132797952615781041 0
 65D:\BeCode\parcel-sass\node_modules\@parcel\codeframe\package.json132797952593811371 0
 101D:\BeCode\parcel-sass\node_modules\postcss-modules-extract-imports\node_modules\ansi-styles\readme.md132797952585605770 0
-36D:\BeCode\parcel-sass\src\index.html132797950500840011 0
+36D:\BeCode\parcel-sass\src\index.html132798160299491275 0
 80D:\BeCode\parcel-sass\node_modules\@parcel\reporter-cli\test\CLIReporter.test.js132797952592299100 0
 58D:\BeCode\parcel-sass\node_modules\postcss-selector-parser132797952616824190 1
 69D:\BeCode\parcel-sass\node_modules\type-fest\source\set-required.d.ts132797952611099973 0
@@ -209,7 +221,7 @@
 77D:\BeCode\parcel-sass\node_modules\postcss-reduce-initial\data\toInitial.json132797952589702073 0
 89D:\BeCode\parcel-sass\node_modules\source-map-support\node_modules\source-map\lib\util.js132797952600412114 0
 70D:\BeCode\parcel-sass\node_modules\core-js\stable\instance\index-of.js132797952660344116 0
-52D:\BeCode\parcel-sass\src\sass\_singleCharacter.scss132797950500858961 0
+52D:\BeCode\parcel-sass\src\sass\_singleCharacter.scss132798160299501262 0
 71D:\BeCode\parcel-sass\node_modules\@parcel\utils\test\sourcemap.test.js132797952619505598 0
 59D:\BeCode\parcel-sass\node_modules\string.prototype.trimend132797952601154645 1
 61D:\BeCode\parcel-sass\node_modules\core-js\es\symbol\split.js132797952673411671 0
@@ -266,8 +278,13 @@
 77D:\BeCode\parcel-sass\node_modules\core-js\features\array\virtual\group-by.js132797952658820611 0
 55D:\BeCode\parcel-sass\node_modules\weak-lru-cache\tests132797952591221262 1
 84D:\BeCode\parcel-sass\node_modules\postcss-modules-values\node_modules\chalk\license132797952585541914 0
+<<<<<<< HEAD
 58D:\BeCode\parcel-sass\src\html\characterEditorCreator.html132798153118248686 0
 51D:\BeCode\parcel-sass\src\html\singleCharacter.html132797950500829291 0
+=======
+58D:\BeCode\parcel-sass\src\html\characterEditorCreator.html132798160299481222 0
+51D:\BeCode\parcel-sass\src\html\singleCharacter.html132798160299481222 0
+>>>>>>> development
 95D:\BeCode\parcel-sass\node_modules\stream-browserify\node_modules\readable-stream\GOVERNANCE.md132797952606465865 0
 106D:\BeCode\parcel-sass\node_modules\@parcel\workers\test\integration\workerfarm\resolve-shared-reference.js132797952610115545 0
 39D:\BeCode\parcel-sass\node_modules\.bin132797952676849215 1
@@ -4750,7 +4767,11 @@
 61D:\BeCode\parcel-sass\node_modules\css-tree\lib\syntax\pseudo132797952624319783 1
 62D:\BeCode\parcel-sass\node_modules\object.assign\test\tests.js132797952601967072 0
 61D:\BeCode\parcel-sass\node_modules\sshpk\lib\formats\pkcs8.js132797952607462457 0
+<<<<<<< HEAD
 31D:\BeCode\parcel-sass\dist\html132798155245553887 1
+=======
+31D:\BeCode\parcel-sass\dist\html132798160454294066 1
+>>>>>>> development
 55D:\BeCode\parcel-sass\node_modules\@babel\highlight\lib132797952582305745 1
 75D:\BeCode\parcel-sass\node_modules\@parcel\core\test\PackagerRunner.test.js132797952621779540 0
 60D:\BeCode\parcel-sass\node_modules\crypto-browserify\LICENSE132797952588365872 0
@@ -5921,7 +5942,11 @@
 91D:\BeCode\parcel-sass\node_modules\postcss-modules-values\node_modules\source-map\README.md132797952580552566 0
 97D:\BeCode\parcel-sass\node_modules\postcss-modules-values\node_modules\source-map\source-map.d.ts132797952602007068 0
 76D:\BeCode\parcel-sass\node_modules\highlight.js\scss\atelier-heath-dark.scss132797952637741100 0
+<<<<<<< HEAD
 45D:\BeCode\parcel-sass\dist\index.7778c26e.css132798155245477128 0
+=======
+45D:\BeCode\parcel-sass\dist\index.7778c26e.css132798160454284240 0
+>>>>>>> development
 65D:\BeCode\parcel-sass\node_modules\css-selector-tokenizer\LICENSE132797952576929536 0
 71D:\BeCode\parcel-sass\node_modules\highlight.js\scss\androidstudio.scss132797952636897446 0
 64D:\BeCode\parcel-sass\node_modules\@parcel\utils\src\debounce.js132797952603689358 0
@@ -11726,7 +11751,11 @@
 74D:\BeCode\parcel-sass\node_modules\es-abstract\2016\OrdinaryHasInstance.js132797952650941101 0
 74D:\BeCode\parcel-sass\node_modules\es-abstract\2016\OrdinaryHasProperty.js132797952651090720 0
 70D:\BeCode\parcel-sass\node_modules\es-abstract\2016\QuoteJSONString.js132797952651900712 0
+<<<<<<< HEAD
 49D:\BeCode\parcel-sass\dist\index.7778c26e.css.map132798155245533902 0
+=======
+49D:\BeCode\parcel-sass\dist\index.7778c26e.css.map132798160454353083 0
+>>>>>>> development
 67D:\BeCode\parcel-sass\node_modules\es-abstract\2016\RegExpCreate.js132797952652060715 0
 76D:\BeCode\parcel-sass\node_modules\@babel\core\src\config\resolve-targets.ts132797952616803203 0
 66D:\BeCode\parcel-sass\node_modules\caniuse-lite\data\regions\MC.js132797952645548323 0
@@ -15911,9 +15940,18 @@
 49D:\BeCode\parcel-sass\node_modules\.bin\which.cmd132797952676709182 0
 49D:\BeCode\parcel-sass\node_modules\.bin\which.ps1132797952676709182 0
 44D:\BeCode\parcel-sass\dist\index.26dd983f.js132798155245477128 0
+<<<<<<< HEAD
 37D:\BeCode\parcel-sass\dist\index.html132798155245477128 0
 45D:\BeCode\parcel-sass\dist\white.1a0acec4.jpg132798155245477128 0
 66D:\BeCode\parcel-sass\dist\html\characterEditorCreator.26dd983f.js132797973328822636 0
 66D:\BeCode\parcel-sass\dist\html\characterEditorCreator.a08802fc.js132798155245477128 0
 59D:\BeCode\parcel-sass\dist\html\characterEditorCreator.html132798155245477128 0
 52D:\BeCode\parcel-sass\dist\html\singleCharacter.html132798155245477128 0
+=======
+37D:\BeCode\parcel-sass\dist\index.html132798160454284240 0
+45D:\BeCode\parcel-sass\dist\white.1a0acec4.jpg132798155245477128 0
+66D:\BeCode\parcel-sass\dist\html\characterEditorCreator.26dd983f.js132797973328822636 0
+66D:\BeCode\parcel-sass\dist\html\characterEditorCreator.a08802fc.js132798155245477128 0
+59D:\BeCode\parcel-sass\dist\html\characterEditorCreator.html132798160454284240 0
+52D:\BeCode\parcel-sass\dist\html\singleCharacter.html132798160454284240 0
+>>>>>>> development
