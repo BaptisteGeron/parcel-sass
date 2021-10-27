@@ -4,35 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
         <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
 
         <link rel="stylesheet" href="./../sass/style.scss">
 
-        <title>Character Editor</title>
-    </head>
+    <title>Character Editor</title>
+</head>
     <body>
         <div class="singleContainer">
             <img id="displayImg" src="../images/white.jpg" alt="">
             <input type="file" id="inputfile">
-            <input type="text" value="" class="inputName" placeholder="Enter a name">
-            <input type="text" value="" class="inputShortDescription" placeholder="Enter a short description">
+            <input type="text" value="" class="inputName">
+            <input type="text" value="" class="inputShortDescription">
             <input type="text" value="" class="inputLongDescription">
-            <button type="submit" id="saveModifications">Save</button>
+
+            <button type="submit" id="saveModifications">Save modifications</button>
         </div>
+        <button id="testButton">click</button>
     
         <script src="./../scripts/bscript.js"></script>
-        <script src="./../scripts/rscript_editCreat.js"></script>
     </body>
-</body>
 </html>
