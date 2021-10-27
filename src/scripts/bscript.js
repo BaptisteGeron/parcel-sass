@@ -23,7 +23,7 @@ let characters = async() => {
     let singleImgField = document.querySelector('.singleImg').src = "data:image/png;base64," + character.image;
     let singleCharacterNameField = document.querySelector('.singleCharacterName').innerHTML = character.name;
     let singleShortDescriptionField = document.querySelector('.singleShortDescription').innerHTML = character.shortDescription;
-    let singleLongDescriptionField = document.querySelector('.singleLongDescription').innerHTML = character.description;
+   let singleLongDescriptionField = document.querySelector('.singleLongDescription').innerHTML = character.description;
     }
     else {}
 }
@@ -48,6 +48,19 @@ inputFile.addEventListener('change', () => {
 }
 })
 
+//display the Markdown editor
+//Initialization of the markdown editor and customization of it toolbar
+const easyMDE = new EasyMDE({element: document.querySelector('.inputLongDescription'),
+toolbar: ["bold", "italic", "heading", "|", "quote", "strikethrough",
+    "heading-smaller","heading-bigger", "code","quote","unordered-list","ordered-list","link","|","clean-block","preview"]});
+    easyMDE.value('coucou');
+
+    document.getElementById('testButton').addEventListener('click', ()=>{
+        let value = easyMDE.value();
+        console.log(value)
+    })
+
+
 //script to display content to edit a character (for characterEditorCreator)
 let editCharacters = async() => {
     let response = await fetch("https://character-database.becode.xyz/characters"+prefixId);
@@ -65,21 +78,32 @@ let editCharacters = async() => {
     let inputNameField = document.querySelector('.inputName').value = character.name;
     let inputShortDescriptionField = document.querySelector('.inputShortDescription').value = character.shortDescription;
     let inputLongDescriptionField = document.querySelector('.inputLongDescription').value = character.description;
+    let htmlToMkd = new showdown.Converter()
+    let mkdDescription = htmlToMkd.makeMarkdown(character.description)
+    easyMDE.value(mkdDescription)
+    localStorage["img"] = character.image
     }
 }
 editCharacters()
-
-//display the Markdown editor
 
 
 
 //send edited character to api
 const saveCharacters = async () => {
     console.log("saving")
+    let mkdDescription = easyMDE.value()
+    let mkdToHtml = new showdown.Converter()
+    let htmlDescription = mkdToHtml.makeHtml(mkdDescription)
+    console.log(htmlDescription)
     let characterToPut = new Object
+    if (fileURLtoSend==undefined) {
+        characterToPut.image= localStorage["img"]
+    }
+    else {
     characterToPut.image = fileURLtoSend
+    }
     characterToPut.name = document.querySelector('.inputName').value
-    characterToPut.description = document.querySelector('.inputLongDescription').value
+    characterToPut.description = htmlDescription
     characterToPut.shortDescription = document.querySelector('.inputShortDescription').value
     console.log(characterToPut);
 
