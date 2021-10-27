@@ -1,14 +1,45 @@
+.singleBody {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
 .singleContainer {
-background-color: aquamarine;
 max-width: 1400px;
 display: flex;
 flex-direction: column;
-
+align-items: center;
+justify-items: center;
+text-align: center;
+gap: 1rem;
+h1 {
+    font-size: 3rem;
+}
 img {
     height: 250px;
     width: 250px;
-    border-radius: 50px;
-    border: 5px solid blue;
+    border-radius: 10px;
 }
+input {
+    width: 70%;
+}
+a{
+ background-color: rgb(147, 147, 248);
+            box-shadow: 5px 5px 5px rgb(177, 174, 174);
+            padding: 0px 10px;
+            border: 0px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+
+            a:hover{
+                box-shadow: inset 0 0 1em gold, 0 0 1em rgb(247, 71, 94);
+                color: whitesmoke;
+                background-color: rgb(240, 90, 90);
+                cursor: pointer;
+            }
+        }
+
 }
 
