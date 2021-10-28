@@ -130,7 +130,7 @@ btnDelete.addEventListener("click",async()=>{
         confirmButtonText: 'Yes, I want to delete',
         denyButtonText: `No, Don't delete`,
         imageUrl: singleImg.src,
-
+        
         preConfirm: async () => {
             
             return response = await fetch(`https://character-database.becode.xyz/characters/${characterId}`,
