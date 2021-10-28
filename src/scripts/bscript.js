@@ -38,14 +38,7 @@ inputFile.addEventListener('change', () => {
 const easyMDE = new EasyMDE({element: document.querySelector('.inputLongDescription'),
 toolbar: ["bold", "italic", "heading", "|", "quote", "strikethrough",
     "heading-smaller","heading-bigger", "code","quote","unordered-list","ordered-list","link","|","clean-block","preview"]});
-    easyMDE.value('coucou');
-
-    document.getElementById('testButton').addEventListener('click', ()=>{
-        let value = easyMDE.value();
-        console.log(value)
-    })
-
-
+    
 //script to display content to edit a character (for characterEditorCreator)
 let editCharacters = async() => {
     let response = await fetch("https://character-database.becode.xyz/characters"+prefixId);
@@ -75,12 +68,11 @@ editCharacters()
 
 //send edited character to api
 const saveCharacters = async () => {
-    console.log("saving")
+    
     //get value from markdown editor
     let mkdDescription = easyMDE.value()
     let mkdToHtml = new showdown.Converter()
     let htmlDescription = mkdToHtml.makeHtml(mkdDescription)
-    console.log(htmlDescription)
 
     //Object to put/post
     let characterToPut = new Object
@@ -93,9 +85,10 @@ const saveCharacters = async () => {
     characterToPut.name = document.querySelector('.inputName').value
     characterToPut.description = htmlDescription
     characterToPut.shortDescription = document.querySelector('.inputShortDescription').value
-    console.log(characterToPut);
+
+    //do not post/put with an empty field
     if ((characterToPut.image==null) || (characterToPut.image==undefined) || (characterToPut.name==null) || (characterToPut.name==undefined) || (characterToPut.description==null) || (characterToPut.description==undefined) || (characterToPut.shortDescription==null) || (characterToPut.shortDescription==undefined)){
-        alert("You have to fill all available fields, including adding a picture")
+        alert("You have to fill all available fields, including adding a picture") //replace with sweet alert
     }
     else {
     await fetch("https://character-database.becode.xyz/characters"+ prefixId,
@@ -104,6 +97,7 @@ const saveCharacters = async () => {
         body : JSON.stringify(characterToPut),
         headers: {"Content-type": "application/json; charset=UTF-8"}
     })
+    alert("saved") //replace with sweet alert 
 }
 }
 const submitButton = document.querySelector('#saveModifications');
