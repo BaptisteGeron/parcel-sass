@@ -12,19 +12,55 @@
 
     <title>Character Editor</title>
 </head>
-    <body>
-        
-        <div class="singleContainer">
-            <img id="displayImg" src="../images/white.jpg" alt="">
-            <input type="file" id="inputfile">
-            <input type="text" value="" class="inputName">
-            <input type="text" value="" class="inputShortDescription">
-            <input type="text" value="" class="inputLongDescription">
+    <body class="editorBody">
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <a href="../index.html"><i class="fa-solid fa-circle-chevron-left"></i></a>
+                   <a href="../index.html"> <li class="nav__list__element">Home</li></a>
+                   <a href="#"><li class="nav__list__element">about</li></a>
+                    <a href="#"><li class="nav__list__element">Conctact</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="singleContainer">
+                <h1>Character Editor</h1>
 
-            <button type="submit" id="saveModifications">Save modifications</button>
-        </div>
-        <button id="testButton">click</button>
-    
+                <div class="cardContainer">
+                    <div class="card">
+                        <img id="displayImg" src="../images/white.jpg" alt="">
+                        <input type="file" id="inputfile">
+                        <input type="text" value="" class="inputName">
+                        <input type="text" value="" class="inputShortDescription">
+                        <input type="text" value="" class="inputLongDescription">
+                        <button type="submit" id="saveModifications">Save modifications</button>
+                    </div>
+                </div>
+            </div>
+            <button id="testButton">click</button>
+        </main>
+        <footer class="footer">
+            <div class="footer__div">
+                <div class="footer__div__nav">
+                    <ul class="footer__div__nav__list">
+                        <a href="#" class="footer__div__nav__list__a">
+                            <li class="footer__div__nav__list__element"><i class="fab fa-facebook-f"></i></li>
+                        </a>
+                        <a href="#" class="footer__div__nav__list__a">
+                            <li class="footer__div__nav__list__element"><i class="fab fa-instagram"></i></li>
+                        </a>
+                        <a href="#" class="footer__div__nav__list__a">
+                            <li class="footer__div__nav__list__element"><i class="fab fa-twitter"></i></li>
+                        </a>
+                    </ul>
+                </div>
+        
+                <p class="footer__copyright">
+                    © 2021 Character manager. Privacy Policy
+                </p>
+            </div>
+        </footer>
         <script src="../scripts/bscript.js"></script>
     </body>
 </html>
