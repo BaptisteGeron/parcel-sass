@@ -14,21 +14,6 @@ else {
     prefixId = "/" + characterId
 }
 
-//display a character (script for singleCharacter.html)
-let characters = async() => {
-    if (characterId != 0) {
-    let response = await fetch("https://character-database.becode.xyz/characters"+prefixId);
-    let character = await response.json();
-
-    let singleImgField = document.querySelector('.singleImg').src = "data:image/png;base64," + character.image;
-    let singleCharacterNameField = document.querySelector('.singleCharacterName').innerHTML = character.name;
-    let singleShortDescriptionField = document.querySelector('.singleShortDescription').innerHTML = character.shortDescription;
-   let singleLongDescriptionField = document.querySelector('.singleLongDescription').innerHTML = character.description;
-    }
-    else {}
-}
-characters()
-
 //load img and return url to send
 const inputFile = document.getElementById('inputfile')
 const displayImgb = document.querySelector('#displayImg')
@@ -106,13 +91,17 @@ const saveCharacters = async () => {
     characterToPut.description = htmlDescription
     characterToPut.shortDescription = document.querySelector('.inputShortDescription').value
     console.log(characterToPut);
-
+    if ((characterToPut.image==null) || (characterToPut.image==undefined) || (characterToPut.name==null) || (characterToPut.name==undefined) || (characterToPut.description==null) || (characterToPut.description==undefined) || (characterToPut.shortDescription==null) || (characterToPut.shortDescription==undefined)){
+        alert("You have to fill all available fields, including adding a picture")
+    }
+    else {
     await fetch("https://character-database.becode.xyz/characters"+ prefixId,
     {
         method : submitMethod,
         body : JSON.stringify(characterToPut),
         headers: {"Content-type": "application/json; charset=UTF-8"}
     })
+}
 }
 const submitButton = document.querySelector('#saveModifications');
 submitButton.addEventListener('click',saveCharacters);
