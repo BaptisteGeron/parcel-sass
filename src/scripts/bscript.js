@@ -76,10 +76,13 @@ editCharacters()
 //send edited character to api
 const saveCharacters = async () => {
     console.log("saving")
+    //get value from markdown editor
     let mkdDescription = easyMDE.value()
     let mkdToHtml = new showdown.Converter()
     let htmlDescription = mkdToHtml.makeHtml(mkdDescription)
     console.log(htmlDescription)
+
+    //Object to put/post
     let characterToPut = new Object
     if (fileURLtoSend==undefined) {
         characterToPut.image= localStorage["img"]
