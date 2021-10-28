@@ -93,7 +93,7 @@ const saveCharacters = async () => {
     characterToPut.shortDescription = document.querySelector('.inputShortDescription').value
 
     //do not post/put with an empty field
-    if ((characterToPut.image==null) || (characterToPut.image==undefined) || (characterToPut.name==null) || (characterToPut.name==undefined) || (characterToPut.description==null) || (characterToPut.description==undefined) || (characterToPut.shortDescription==null) || (characterToPut.shortDescription==undefined)){
+    if ((characterToPut.image==null) || (characterToPut.image==undefined)|| (characterToPut.image=='') || (characterToPut.name==null) || (characterToPut.name==undefined) || (characterToPut.name=='') || (characterToPut.description==null) || (characterToPut.description==undefined)|| (characterToPut.description=='') || (characterToPut.shortDescription==null) || (characterToPut.shortDescription==undefined) || (characterToPut.shortDescription=='')){
         //Alert("You have to fill all available fields, including adding a picture") //replace with sweet alert
         Swal.fire({
             position: 'center',
