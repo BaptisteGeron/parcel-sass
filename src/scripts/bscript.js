@@ -20,6 +20,10 @@ const displayImgb = document.querySelector('#displayImg')
 let fileURL;
 let fileURLtoSend;
 
+document.getElementById('modifImg').addEventListener('click', ()=>{
+    inputFile.click()
+})
+
 inputFile.addEventListener('change', () => {
     let reader = new FileReader() 
   reader.readAsDataURL(inputFile.files[0])
@@ -41,9 +45,10 @@ toolbar: ["bold", "italic", "heading", "|", "quote", "strikethrough",
     
 //script to display content to edit a character (for characterEditorCreator)
 let editCharacters = async() => {
+    try {
     let response = await fetch("https://character-database.becode.xyz/characters"+prefixId);
     let character = await response.json();
-
+    
     //display content when editing and nothing for creating new character
     if (characterId==0) {
     //let singleImgField = document.querySelector('.singleImg').src = null;
@@ -61,6 +66,7 @@ let editCharacters = async() => {
     easyMDE.value(mkdDescription)
     localStorage["img"] = character.image
     }
+    } catch(err) {console.error("error occured during fetching character" + err)}
 }
 editCharacters()
 
@@ -91,18 +97,28 @@ const saveCharacters = async () => {
         alert("You have to fill all available fields, including adding a picture") //replace with sweet alert
     }
     else {
+try {
     await fetch("https://character-database.becode.xyz/characters"+ prefixId,
     {
         method : submitMethod,
         body : JSON.stringify(characterToPut),
         headers: {"Content-type": "application/json; charset=UTF-8"}
     })
-    alert("saved") //replace with sweet alert 
+} catch (err) {console.log("error occured during saving" + err)}
+    alert("saved") //replace with sweet alert with duration 2000ms
+    setTimeout(window.location.href = '../index.html',2000)
 }
 }
 const submitButton = document.querySelector('#saveModifications');
 submitButton.addEventListener('click',saveCharacters);
 
+document.getElementById('abort').addEventListener('click', ()=>{
+    let abort = window.confirm("Continue? Your modifications will not be saved!\nThis will redirect you to the main page");
+    if (abort==true) {
+        window.location.href = '../index.html'
+    }
+    else {}
+})
 
 
 

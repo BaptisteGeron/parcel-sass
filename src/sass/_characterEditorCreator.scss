@@ -22,7 +22,7 @@
             align-items: center;
             gap: 1rem;
     }
-    #saveModifications{
+    .actionButtons{
         background-color: rgb(147, 147, 248);
                    box-shadow: 5px 5px 5px rgb(177, 174, 174);
                    padding: 0px 10px;
@@ -32,7 +32,7 @@
                    font-weight: bold;
                    color: white;
                }
-            #saveModifications:hover{
+            .actionButtons:hover{
                    box-shadow: inset 0 0 1em gold, 0 0 1em rgb(247, 71, 94);
                    color: whitesmoke;
                    background-color: rgb(240, 90, 90);
