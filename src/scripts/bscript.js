@@ -14,26 +14,15 @@ else {
     prefixId = "/" + characterId
 }
 
-//display a character (script for singleCharacter.html)
-let characters = async() => {
-    if (characterId != 0) {
-    let response = await fetch("https://character-database.becode.xyz/characters"+prefixId);
-    let character = await response.json();
-
-    let singleImgField = document.querySelector('.singleImg').src = "data:image/png;base64," + character.image;
-    let singleCharacterNameField = document.querySelector('.singleCharacterName').innerHTML = character.name;
-    let singleShortDescriptionField = document.querySelector('.singleShortDescription').innerHTML = character.shortDescription;
-    let singleLongDescriptionField = document.querySelector('.singleLongDescription').innerHTML = character.description;
-    }
-    else {}
-}
-characters()
-
 //load img and return url to send
 const inputFile = document.getElementById('inputfile')
 const displayImgb = document.querySelector('#displayImg')
 let fileURL;
 let fileURLtoSend;
+
+document.getElementById('modifImg').addEventListener('click', ()=>{
+    inputFile.click()
+})
 
 inputFile.addEventListener('change', () => {
     let reader = new FileReader() 
@@ -48,11 +37,18 @@ inputFile.addEventListener('change', () => {
 }
 })
 
+//display the Markdown editor
+//Initialization of the markdown editor and customization of it toolbar
+const easyMDE = new EasyMDE({element: document.querySelector('.inputLongDescription'),
+toolbar: ["bold", "italic", "heading", "|", "quote", "strikethrough",
+    "heading-smaller","heading-bigger", "code","quote","unordered-list","ordered-list","link","|","clean-block","preview"]});
+    
 //script to display content to edit a character (for characterEditorCreator)
 let editCharacters = async() => {
+    try {
     let response = await fetch("https://character-database.becode.xyz/characters"+prefixId);
     let character = await response.json();
-
+    
     //display content when editing and nothing for creating new character
     if (characterId==0) {
     //let singleImgField = document.querySelector('.singleImg').src = null;
@@ -65,30 +61,94 @@ let editCharacters = async() => {
     let inputNameField = document.querySelector('.inputName').value = character.name;
     let inputShortDescriptionField = document.querySelector('.inputShortDescription').value = character.shortDescription;
     let inputLongDescriptionField = document.querySelector('.inputLongDescription').value = character.description;
+    let htmlToMkd = new showdown.Converter()
+    let mkdDescription = htmlToMkd.makeMarkdown(character.description)
+    easyMDE.value(mkdDescription)
+    localStorage["img"] = character.image
     }
+    } catch(err) {console.error("error occured during fetching character" + err)}
 }
 editCharacters()
 
+
+
 //send edited character to api
 const saveCharacters = async () => {
-    console.log("saving")
-    let characterToPut = new Object
-    characterToPut.image = fileURLtoSend
-    characterToPut.name = document.querySelector('.inputName').value
-    characterToPut.description = document.querySelector('.inputLongDescription').value
-    characterToPut.shortDescription = document.querySelector('.inputShortDescription').value
-    console.log(characterToPut);
+    
+    //get value from markdown editor
+    let mkdDescription = easyMDE.value()
+    let mkdToHtml = new showdown.Converter()
+    let htmlDescription = mkdToHtml.makeHtml(mkdDescription)
 
+    //Object to put/post
+    let characterToPut = new Object
+    if (fileURLtoSend==undefined) {
+        characterToPut.image= localStorage["img"]
+    }
+    else {
+    characterToPut.image = fileURLtoSend
+    }
+    characterToPut.name = document.querySelector('.inputName').value
+    characterToPut.description = htmlDescription
+    characterToPut.shortDescription = document.querySelector('.inputShortDescription').value
+
+    //do not post/put with an empty field
+    if ((characterToPut.image==null) || (characterToPut.image==undefined)|| (characterToPut.image=='') || (characterToPut.name==null) || (characterToPut.name==undefined) || (characterToPut.name=='') || (characterToPut.description==null) || (characterToPut.description==undefined)|| (characterToPut.description=='') || (characterToPut.shortDescription==null) || (characterToPut.shortDescription==undefined) || (characterToPut.shortDescription=='')){
+        //Alert("You have to fill all available fields, including adding a picture") //replace with sweet alert
+        Swal.fire({
+            position: 'center',
+            icon: 'warning',
+            title: 'You have to fill all available fields, including adding a picture',
+            showConfirmButton: true,
+            
+          })
+    }
+    else {
+try {
     await fetch("https://character-database.becode.xyz/characters"+ prefixId,
     {
         method : submitMethod,
         body : JSON.stringify(characterToPut),
         headers: {"Content-type": "application/json; charset=UTF-8"}
     })
+} catch (err) {console.log("error occured during saving" + err)}
+    //Swal.fire("saved") //replace with sweet alert with duration 2000ms
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Your changes has been saved',
+        showConfirmButton: false,
+        timer: 2000,
+        
+      })
+      .then(()=>window.location.href = '../index.html')
+}
 }
 const submitButton = document.querySelector('#saveModifications');
 submitButton.addEventListener('click',saveCharacters);
 
+document.getElementById('abort').addEventListener('click', ()=>{
+    //let abort = window.confirm("Continue? Your modifications will not be saved!\nThis will redirect you to the main page");
+    Swal.fire({
+        position: 'center',
+        icon: 'question',
+        title: 'Abort changes',
+        html: 'Your changes will not be saved!<br/>This will redirect you to the main page',
+        
+        showDenyButton: true,
+        confirmButtonText: 'Yes, continue',
+        denyButtonText: `No, Don't continue`,
+                
+      })
+      .then((result)=>{
+            if (result.isConfirmed){window.location.href = '../index.html'}
+        })
+
+    /* if (abort==true) {
+        window.location.href = '../index.html'
+    }
+    else {} */
+})
 
 
 

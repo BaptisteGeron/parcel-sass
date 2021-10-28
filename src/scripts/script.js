@@ -1,13 +1,11 @@
-//import "regenerator-runtime/runtime";
-
 const tpl = document.querySelector("#tplCharacter");
 const target = document.querySelector("#characterList");
 const searchInput = document.querySelector("#searchInput");
-var characterId
+
 
 
 const fectchData = async () => {
-    const response = await fetch("https://character-database.becode.xyz/characters" );
+    const response = await fetch("https://character-database.becode.xyz/characters");
 
     let responseInJson = await response.json();
     //console.log(responseInJson)
@@ -34,16 +32,6 @@ const fectchData = async () => {
 }
 
 fectchData()
-
-
-/* searchInput.addEventListener("focusin",()=>{
-    const fectchData2 = async () => {
-        const response2 = await fetch("https://character-database.becode.xyz/characters" + "da0ac535-1eb5-4b6b-8269-e1832d55f79d" );
-        let responseInJson2 = await response2.json();
-        console.log(responseInJson2)
-    }
-    fectchData2()
-}) */
 
 const searchStates = async searchtext =>{
     const result = await fetch("https://character-database.becode.xyz/characters" );
@@ -86,10 +74,14 @@ const searchStates = async searchtext =>{
         target.appendChild(cloneTemplate);
     }
 
-    //console.log(matches)
 }
 
 searchInput.addEventListener("input",()=>searchStates(searchInput.value))
 
-let addBtn = document.querySelector(".characterList__containerAddButton").addEventListener("click",()=>localStorage["stored"] = 0)
+let addBtn = document.querySelector(".characterList__containerAddButton").addEventListener("click",
+()=>{
+    localStorage["stored"] = 0
+    console.log(localStorage["stored"])
+})
+
 
