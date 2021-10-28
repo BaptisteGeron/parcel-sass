@@ -15,7 +15,7 @@ else {
 }
 
 //display a character (script for singleCharacter.html)
-let characters = async() => {
+/* let characters = async() => {
     if (characterId != 0) {
     let response = await fetch("https://character-database.becode.xyz/characters"+prefixId);
     let character = await response.json();
@@ -27,7 +27,7 @@ let characters = async() => {
     }
     else {}
 }
-characters()
+characters() */
 
 //load img and return url to send
 const inputFile = document.getElementById('inputfile')
